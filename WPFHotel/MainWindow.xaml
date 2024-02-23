@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFHotel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHotel"
+        mc:Ignorable="d"
+        Title="Hotel" Height="350" Width="650">
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+                  AlternatingRowBackground="Aqua" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnAranzmani" Content="Aranzmani" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnAranzmani_Click"/>
+            <Button x:Name="btnGosti" Content="Gosti" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnGosti_Click"/>
+            <Button x:Name="btnRadnici" Content="Radnici" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnRadnici_Click"/>
+            <Button x:Name="btnRestorani" Content="Restorani" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnRestorani_Click"/>
+            <Button x:Name="btnRezervacije" Content="Rezervacije" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnRezervacije_Click"/>
+            <Button x:Name="btnSobe" Content="Sobe" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnSobe_Click"/>
+            <Button x:Name="btnSobeGosti" Content="SobeGosti" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnSobeGosti_Click"/>
+            <Button x:Name="btnTeretane" Content="Teretane" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnTeretane_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="360" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="120" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="120" Click="btnIzmeni_Click"/>
+            <Button x:Name="btnObrisi" Content="Obriši" Width="120" Click="btnObrisi_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
